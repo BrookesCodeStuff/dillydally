@@ -16,7 +16,8 @@ html {
 
 .button {
   border-radius: 4px;
-  background-color: #4a4a4a;
+  background-color: #9dc20b;
+  padding: .1875rem .5rem;
   color: white;
 }
 
@@ -81,18 +82,18 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
   }
 
-  header .tablet {
+  header .logo {
     display: none;
   }
 
   header .mobile {
     display: block;
-    width: 100%;
+    width: 100vw;
   }
 
   header .content {
@@ -110,29 +111,26 @@ header .mobile {
     padding: 0;
   }
 
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
+  header .button {
+    
     line-height: 1.6;
     color: white;
   }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 760px) {
-  header .desktop {
+@media only screen and (min-width: 760px) {
+  header .mobile {
     display: none;
   }
 
-  header .mobile {
+  header .desktop {
     display: none;
   }
 
   header .tablet {
     display: block;
-    width: 100%;
   }
 }
-
 
 /* Sign Up Section */
 
@@ -141,10 +139,6 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url('../images/banner-landingpage.jpg');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
 }
 
 #sign-up-cta {
@@ -187,6 +181,7 @@ header .mobile {
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  background-color: #4a4a4a;
 }
 
 @media only screen and (max-width: 760px) {
