@@ -8,6 +8,7 @@ config.json
 package-lock.json
 
 node_modules/
+design_spec/
 .DS_Store
 .idea/
 *.iml
